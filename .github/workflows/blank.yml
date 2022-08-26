@@ -29,7 +29,6 @@ jobs:
       - name: Install elan
         run: |
           curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -s -- -y
-          sudo -H /home/runner/.elan/bin/elan default stable
           sudo -H /home/runner/.elan/bin/leanpkg add .
 
       # Runs a set of commands using the runners shell
